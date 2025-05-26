@@ -47,3 +47,30 @@ label::before { /* Додаємо символ перед <label> */
 button:hover { /* Ефект наведення на кнопку */
     background-color: #45a100;
 }
+/* Нові стилі */
+* {
+    box-sizing: border-box; /* Для кросбраузерності */
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1; /* Ефект наведення */
+}
