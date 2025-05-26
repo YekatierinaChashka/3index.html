@@ -1,0 +1,49 @@
+/* Стилі з заняття 2 (нагадування) */
+h1 {
+    color: blue;
+}
+main {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+input {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid gray;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+footer p {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Нові стилі для заняття 3 */
+nav > a { /* Прямі дочірні <a> у <nav> */
+    color: white;
+    background-color: navy;
+    padding: 5px;
+    text-decoration: none;
+}
+
+form input:first-child { /* Перший <input> у формі */
+    background-color: #ffe6e6;
+}
+
+h2 + p { /* <p> одразу після <h2> */
+    color: gray;
+}
+
+label::before { /* Додаємо символ перед <label> */
+    content: "➤ ";
+    color: #4CAF50;
+}
+
+button:hover { /* Ефект наведення на кнопку */
+    background-color: #45a100;
+}
