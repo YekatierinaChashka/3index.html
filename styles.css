@@ -1,76 +1,100 @@
-/* Стилі з заняття 2 (нагадування) */
-h1 {
-    color: blue;
+/* Базові стилі */
+* {
+    box-sizing: border-box;
 }
-main {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-input {
-    width: 200px;
-    padding: 5px;
-    margin: 5px 0;
-    border: 1px solid gray;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-}
-footer p {
-    font-size: 12px;
-    color: gray;
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
-/* Нові стилі для заняття 3 */
-nav > a { /* Прямі дочірні <a> у <nav> */
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.header__title {
+    color: blue;
+}
+.header__nav {
+    padding: 10px;
+}
+.header__nav-link {
+    display: inline-block;
     color: white;
     background-color: navy;
     padding: 5px;
     text-decoration: none;
 }
 
-form input:first-child { /* Перший <input> у формі */
-    background-color: #ffe6e6;
+/* Main */
+.main {
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-h2 + p { /* <p> одразу після <h2> */
+/* Form Section */
+.form-section__title {
+    margin-bottom: 10px;
+}
+.form-section__text {
     color: gray;
+    margin-bottom: 15px;
 }
-
-label::before { /* Додаємо символ перед <label> */
+.form__label {
+    display: block;
+    font-weight: bold;
+}
+.form__label::before {
     content: "➤ ";
     color: #4CAF50;
 }
+.form__input {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid gray;
+}
+.form__input:first-child {
+    background-color: #ffe6e6;
+}
+.form__button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.form__button:hover {
+    background-color: #45a049;
+}
 
-button:hover { /* Ефект наведення на кнопку */
-    background-color: #45a100;
-}
-/* Нові стилі */
-* {
-    box-sizing: border-box; /* Для кросбраузерності */
-}
-body {
-    font-family: "Roboto", sans-serif;
-}
-table {
+/* Table Section */
+.table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
-th, td {
+.table__cell {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
 }
-th {
+.table__cell--header {
     background-color: #4CAF50;
     color: white;
 }
-tr:nth-child(even) {
+.table__row:nth-child(even) {
     background-color: #f9f9f9;
 }
-tr:hover {
-    background-color: #f1f1f1; /* Ефект наведення */
+.table__row:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+.footer__text {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
 }
